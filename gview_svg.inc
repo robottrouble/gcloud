@@ -100,8 +100,8 @@ if($mag < 1)
 
 <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
 <rect width="100%" height="100%"
-style="fill:rgb(0,0,0);stroke-width:1;
-stroke:rgb(0,0,0)"/>
+style="fill:rgb(255,255,255);stroke-width:1;
+stroke:rgb(255,255,255)"/>
 <g transform="scale(<?php echo $mag?>)">
 <g transform="translate(<?php echo $xskew . ", " . $yskew; ?>)">';
 
@@ -137,7 +137,7 @@ stroke:rgb(0,0,0)"/>
                 {
                         if($last['X'] != '' && $last['Y'] != '')
                         {
-                                $color="255,0,0";
+                                $color="25,25,25";
 
                                 if($cur['display'])
                                         $line = sprintf('<line x1="%s" y1="%s" x2="%s" y2="%s" style="stroke:rgb(%s);stroke-width:.1%%"/>', $last['X'] * $resolution, $last['Y'] * $resolution, $cur['X'] * $resolution, $cur['Y'] * $resolution, $color);
